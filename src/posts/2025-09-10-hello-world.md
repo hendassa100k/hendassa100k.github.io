@@ -1,10 +1,10 @@
 ---
 title: 'Hello World!'
 keywords: [Hello, world!]
-date: 2025-09-09
-meta-date: 2025-09-09
+date: 2025-09-10
+meta-date: 2025-09-10
 abstract: |
   Hello World!
 ---
 
-This is a test page
+This is a test page.
