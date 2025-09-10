@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Hendassa100k</name>
+  </author>
+  <title>$title$</title>
+  <id>https://hendassa100k.github.io/</id>
+  <link rel="self" href="https://hendassa100k.github.io/atom.xml" />
+  $for(posts)$
+  <entry>
+    <id>$posts.url$</id>
+    <title>$posts.title$</title>
+    <updated>$posts.published$T00:00:00+00:00</updated>
+    <link href="$posts.url$" />
+    <summary>$posts.summary$</summary>
+  </entry>
+  $endfor$
+</feed>
