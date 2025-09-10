@@ -19,7 +19,7 @@ feed: build/atom.xml
 build/%.html: src/%.md
 	mkdir -p $(dir $@)
 	pandoc $(FORMAT_OPTIONS) --toc --template=$(POST_TEMPLATE) \
-	-V 'atom-url:../atom.xml' -V 'main-page:../index.html' \
+	-V 'atom-url:../atom.xml' -V 'main-page:../' \
 	--css=../style.css --quiet $< -o $@ < /dev/null
 
 $(TARGET_STYLE_FILE): src/static/style.css
