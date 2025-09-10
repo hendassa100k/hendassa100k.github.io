@@ -37,7 +37,7 @@ $endif$
 $for(include-before)$
 $include-before$
 $endfor$
-$../header()$
+$header()$
 $if(toc)$
 <nav id="$idprefix$TOC" role="doc-toc">
 $if(toc-title)$
@@ -50,12 +50,41 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
-<p>
-Welcome to my website!
-</p>
+<section class="description">
+  <p>
+    <b>Hi!</b><br/><br/>
+    I’m a seasoned developer with over a decade of experience, now diving deep into low‑level engineering where performance, simplicity, and reliability take center stage. Fan of OSS.<br/>
+    I love building fast, clean code in Zig, Go, Java, Rust, Python, and C - in that order. I've made games in the past, but now I'm doing low-level programming. All my open‑source projects live on Codeberg, while the rest of my repos are on GitHub.<br/><br/>
+    Do you want to hire me? Send an email to <a href='mailto:businesshendassa100k@proton.me'>businesshendassa100k@proton.me</a> and I'll send you a CV.
+  </p>
+</section>
+<section class="links">
+  <h2>Links</h2>
+  <a href='https://archlinux.org/' class='img-link'>
+    <img src='$image-path$images/archlinux.png'>
+  </a>
+  <a href='https://helix-editor.com/' class='img-link'>
+    <img src='$image-path$images/helix.png'>
+  </a>
+  <a href='https://validator.w3.org/feed/' class='img-link'>
+    <img src='$image-path$images/atom.png'>
+  </a>
+  <a class='img-link'>
+    <img src='$image-path$images/javascriptfree.png' class='img-link'>
+  </a>
+  <br/>
+  <a href='https://github.com/hendassa100k' class='img-link'>
+    <img src='$image-path$images/github.gif' class='img-link'>
+  </a>
+  <a href='https://codeberg.org/hendassa100k' class='img-link'>
+    <img src='$image-path$images/codeberg.png' class='img-link'>
+  </a>
+</section>
 <section class="latest-posts">
-  <h2>Recent blog posts</h2>
-  $posts()$
+  <h2>Blog posts</h2>
+  <ul>
+    $posts()$
+  </ul>
 </section>
 $footer()$
 </body>

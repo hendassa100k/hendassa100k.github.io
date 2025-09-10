@@ -19,6 +19,22 @@
   --nc-ac-tx: #000000;
 }
 
+.logo {
+  width: 4rem;
+  border-radius: 50%;
+  margin-bottom: 0 !important;
+}
+
+a.img-link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 0;
+}
+
+a.img-link img {
+  display: block;
+  margin-bottom: 0 !important;
+}
 
 * {
   margin: 0;

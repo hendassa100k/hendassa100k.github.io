@@ -13,13 +13,13 @@ ATOM_TEMPLATE := src/static/templates/atom.xml
 FEED_FILE := src/feed.yaml
 
 all: pages feed
-pages: $(HTML_FILES) build/index.html $(MD_FILES) $(TARGET_STYLE_FILE) $(IMAGE_FILES) 
+pages: $(HTML_FILES) build/index.html $(MD_FILES) $(TARGET_STYLE_FILE) $(IMAGE_FILES) images
 feed: build/atom.xml
 
 build/%.html: src/%.md
 	mkdir -p $(dir $@)
 	pandoc $(FORMAT_OPTIONS) --toc --template=$(POST_TEMPLATE) \
-	-V 'atom-url:../atom.xml' -V 'main-page:../' \
+	-V 'atom-path:../' -V 'main-path:../' -V 'images-path:../' \
 	--css=../style.css --quiet $< -o $@ < /dev/null
 
 $(TARGET_STYLE_FILE): src/static/style.css
@@ -27,13 +27,17 @@ $(TARGET_STYLE_FILE): src/static/style.css
 
 build/index.html: src/feed.yaml
 	pandoc $(FORMAT_OPTIONS) --template=$(INDEX_TEMPLATE) \
-	-V 'atom-url:atom.xml' --css=style.css \
+	-V 'atom-path:./' -V 'image-path:./' --css=style.css \
 	--metadata-file=$< --quiet -o $@ < /dev/null
 
 build/atom.xml: src/feed.yaml src/static/templates/atom.xml
 	pandoc --metadata-file=$(FEED_FILE) \
 	--template=$(ATOM_TEMPLATE) \
 	-t html -o build/atom.xml < /dev/null
+
+images: src/static/images/
+	mkdir -p build/images
+	cp src/static/images/* build/images/
 
 clean:
 	rm $(HTML_FILES)
