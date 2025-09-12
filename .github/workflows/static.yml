@@ -28,7 +28,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     env:
       BASE_URL: ${{ steps.deployment.outputs.page_url }}
-      TITLE: Hendassa100k Website
+      TITLE: "Hendassa100k Website"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
