@@ -27,7 +27,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
-      BASE_URL: ${{ steps.deployment.outputs.page_url }}
+      BASE_URL: "https://hendassa100k.github.io"
       TITLE: "Hendassa100k Website"
     runs-on: ubuntu-latest
     steps:
