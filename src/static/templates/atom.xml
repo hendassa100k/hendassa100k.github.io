@@ -4,15 +4,15 @@
     <name>Hendassa100k</name>
   </author>
   <title>$title$</title>
-  <id>https://hendassa100k.github.io/</id>
-  <link rel="self" href="https://hendassa100k.github.io/atom.xml" />
+  <id>$url$</id>
+  <link rel="self" href="$url$/atom.xml" />
   $for(posts)$
   <entry>
     <id>$posts.url$</id>
     <title>$posts.title$</title>
-    <updated>$posts.published$T00:00:00+00:00</updated>
+    <updated>$posts.date$T00:00:00+00:00</updated>
     <link href="$posts.url$" />
-    <summary>$posts.summary$</summary>
+    <summary>$posts.abstract$</summary>
   </entry>
   $endfor$
 </feed>
