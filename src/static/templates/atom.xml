@@ -4,7 +4,8 @@
     <name>Hendassa100k</name>
   </author>
   <title>$title$</title>
-  <id>$url$</id>
+  <id>$url$/</id>
+  <updated>$date$+00:00</updated>
   <link rel="self" href="$url$/atom.xml" />
   $for(posts)$
   <entry>

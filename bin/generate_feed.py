@@ -5,7 +5,7 @@ import sys
 import glob
 import yaml
 import pathlib
-import tempfile
+import datetime
 
 POSTS_GLOB = "src/posts/*.md"
 BASE_URL = os.getenv("BASE_URL")
@@ -66,6 +66,7 @@ def main() -> None:
     output_data = {
         "title": TITLE,
         "url": BASE_URL,
+        "date": datetime.datetime.combine(datetime.datetime.now(datetime.UTC), datetime.time.min).isoformat(),
         "posts": posts,
     }
 
