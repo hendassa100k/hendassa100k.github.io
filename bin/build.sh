@@ -35,6 +35,7 @@ pandoc_md_to_html() {
     pandoc ${FORMAT_OPTIONS} --toc \
         --template="${POST_TEMPLATE}" \
         -V "atom-path:../" -V "main-path:../" -V "images-path:../" \
+        --syntax-definition src/static/zig.xml \
         --css=../style.css --quiet "$src_md" -o "$dst_html" < /dev/null
     echo "${src_md} -> ${dst_html}" >&2
 }
