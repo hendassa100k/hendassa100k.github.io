@@ -13,12 +13,12 @@ Do you want to hire me? Send an email to
 
 Want to add my button? Of course!
 
-[![Hendassa100k](https://hendassa100k.github.io/images/100k.gif)](https://hendassa100k.github.io/)
+[![Hendassa100k](buttons/100k.gif)](https://hendassa100k.github.io/)
 
 ## Links
 
-[![](buttons/archlinux.png)](https://archlinux.org/)
-[![](buttons/helix.png)](https://helix-editor.com/)
-[![](buttons/atom.png)](https://validator.w3.org/feed/)
-[![](buttons/github.gif)](https://github.com/hendassa100k)
-[![](buttons/codeberg.png)](https://codeberg.org/hendassa100k)
+[![Arch Linux](buttons/archlinux.png)](https://archlinux.org/)
+[![Helix](buttons/helix.png)](https://helix-editor.com/)
+[![Atom](buttons/atom.png)](https://validator.w3.org/feed/)
+[![GitHub](buttons/github.gif)](https://github.com/hendassa100k)
+[![Codeberg](buttons/codeberg.png)](https://codeberg.org/hendassa100k)
