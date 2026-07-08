@@ -1,0 +1,44 @@
+baseURL = 'https://hendassa100k.github.io/'
+locale = 'en-us'
+title = 'Hendassa100k Website'
+copyright = "Licensed under 0BSD"
+theme = 'archie'
+
+[[caches.images]]
+dir = ":cacheDir/images"
+
+[params]
+	mode="dark"
+	useCDN=false
+	mathjax = false
+	katex = false
+
+[[params.social]]
+name = "Codeberg"
+icon = "simple:codeberg"
+url = "https://codeberg.org/hendassa100k"
+
+[[params.social]]
+name = "GitHub"
+icon = "simple:github"
+url = "https://github.com/hendassa100k"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
