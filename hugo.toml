@@ -4,6 +4,9 @@ title = 'Hendassa100k Website'
 copyright = "Licensed under 0BSD"
 theme = 'archie'
 
+[outputFormats.rss]
+  baseName = 'rss'
+
 [[caches.images]]
 dir = ":cacheDir/images"
 
