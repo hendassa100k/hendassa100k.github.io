@@ -12,4 +12,6 @@ author: 'Hendassa100k'
 
 Fingerprint: `6C7E C61C A5A4 B203 11B5 1461 DE90 2B4C 1999 1EFC`
 
-{{< key "pubkey.asc" >}}
+Expires: 2029-06-27
+
+{{< key "pubkey.asc.txt" >}}
