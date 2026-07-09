@@ -1,0 +1,21 @@
+{{ $featherURL := "/svg/feather-sprite.svg" | relURL }}
+
+{{ $file := .Get 0 }}
+<a href="{{ $file }}">{{ $file }}</a>
+<div class="key-block">
+  {{ highlight (strings.Trim (readFile (print "static/keys/" $file)) "\n") }}
+  <a class="key-copy-btn">
+    <svg class="feather">
+      <use href="{{ printf "%s#%s" $featherURL "clipboard" }}" />
+    </svg>
+    <br>
+    Copy
+  </a>
+  <a href="{{ $file }}">
+    <svg class="feather">
+      <use href="{{ printf "%s#%s" $featherURL "download" }}" />
+    </svg>
+    <br>
+    Raw
+  </a>
+</div>

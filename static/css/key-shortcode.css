@@ -1,0 +1,28 @@
+.key-block {
+  display: flex;
+  align-items: center;
+  height: 5em;
+}
+
+.key-block>pre {
+  overflow: auto;
+  max-height: 5em;
+  overflow: auto;
+  flex: 1;
+  height: 100%;
+}
+
+.key-block>a {
+  text-align: center;
+  align-content: center;
+
+  margin-left: 1em;
+  cursor: pointer;
+  min-width: 5em;
+  height: 100%;
+}
+
+* {
+  scrollbar-color: var(--color-border-dark) var(--color-background-code-dark);
+  scrollbar-width: thin;
+}

@@ -1,0 +1,5 @@
+{{ if .HasShortcode "key" }}
+<link rel="stylesheet" href="{{ "/css/key-shortcode.css" | relURL }}">
+<script defer src="{{ "/js/key-shortcode.js" | relURL }}"></script>
+<meta id="config" data-feather-url="{{ "/svg/feather-sprite.svg" | relURL }}" data-version="1.0">
+{{ end }}
