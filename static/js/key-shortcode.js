@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         await navigator.clipboard.writeText(text);
                 
         prevBtn = btn.innerHTML;
-        btn.innerHTML = `<svg class="feather"><use href="${featherUrl}#check"/></svg><br>Copied!`;
+        btn.innerHTML = `<svg class="feather"><use href="${featherUrl}#check"/></svg>`;
         
         setTimeout(() => btn.innerHTML = prevBtn, 1000);
       } catch (err) {
         console.error('Failed to copy:', err);
-        btn.innerHTML = '<svg class="feather"><use href="/svg/feather-sprite.svg#x"/></svg><br>Error';
+        btn.innerHTML = '<svg class="feather"><use href="/svg/feather-sprite.svg#x"/></svg>';
       }
     });
   });

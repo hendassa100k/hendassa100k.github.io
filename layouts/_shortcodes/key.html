@@ -1,4 +1,4 @@
-{{ $featherURL := "/svg/feather-sprite.svg" | relURL }}
+{{ $featherURL := absURL "/svg/feather-sprite.svg" }}
 
 {{ $file := .Get 0 }}
 <a href="{{ $file }}">{{ $file }}</a>
@@ -8,14 +8,10 @@
     <svg class="feather">
       <use href="{{ printf "%s#%s" $featherURL "clipboard" }}" />
     </svg>
-    <br>
-    Copy
   </a>
   <a href="{{ $file }}">
     <svg class="feather">
       <use href="{{ printf "%s#%s" $featherURL "download" }}" />
     </svg>
-    <br>
-    Raw
   </a>
 </div>

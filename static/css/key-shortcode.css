@@ -1,15 +1,13 @@
 .key-block {
   display: flex;
   align-items: center;
-  height: 5em;
+  height: 4.1em;
 }
 
 .key-block>pre {
   overflow: auto;
-  max-height: 5em;
-  overflow: auto;
-  flex: 1;
   height: 100%;
+  flex: 1;
 }
 
 .key-block>a {
@@ -18,8 +16,8 @@
 
   margin-left: 1em;
   cursor: pointer;
-  min-width: 5em;
-  height: 100%;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 * {
