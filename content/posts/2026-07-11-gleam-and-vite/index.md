@@ -4,6 +4,8 @@ title: 'JavaScript sucks. Here’s how to build with Vite and Gleam'
 author: 'Hendassa100k'
 ---
 
+{{< image "images/cover.webp" "Vite and Gleam" >}}
+
 For years, I've felt this pain: the tooling is great, but the language is fundamentally flawed. JavaScript was never designed properly. I mean *never*. I've worried to even touch this language for this exact reason. Web developers spent a decade building increasingly elaborate band-aids to make it work. While TypeScript provides a safety net, it often feels like weak tape holding together a structure that wasn't built to be sane for developers. I wanted something better that doesn't change my values.
 
 That's when I discovered [Gleam](https://gleam.run/). Gleam is a type-safe, functional programming language. While I didn't wrote a single program in functional programming language, I realized that's exactly what a scripting language should be. Gleam offers proper type safety and a functional approach that makes writing robust, safe, and concurrent code - the very things the web requires. Unlike TypeScript, it doesn't try to wrap shit in gold. It throws all of that out the window, but still leaves you a way to interact with it.
